@@ -1,0 +1,225 @@
+body {
+  background: #303030;
+}
+
+.container {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 90.8vh;
+  overflow: scroll;
+}
+
+a,a:hover, a:active{
+	text-decoration: none;
+	color: white;
+}
+
+a:hover, a:active {
+  color: yellow;
+  transition: 0.15s;
+}
+
+.categories > a {
+  color: magenta;
+}
+
+/*HEADER*/
+
+.header{
+  width: 100vw;
+  height: 8vh;
+  background: #0A0A0A;
+  box-shadow: 0 0.05vh white;
+}
+
+/*SEARCHER*/
+
+.searcher {
+  position: absolute;
+  top: 1.6vh;
+  left: 2vw;
+}
+
+.search-box {
+  border: solid 0.3rem magenta;
+  display: inline-block;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.search-box input[type="text"] {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  background: transparent;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 1rem;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 2rem;
+  transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 150ms;
+}
+
+.search-box input[type="text"]:focus {
+  outline: none;
+}
+
+.search-box input[type="text"]:focus, .search-box input[type="text"]:not(:placeholder-shown) {
+  width: 24vw;;
+  transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.search-box input[type="text"]:focus + button[type="reset"], .search-box input[type="text"]:not(:placeholder-shown) + button[type="reset"] {
+  bottom: 0.2rem;
+  right: 0.5rem;
+  transition: bottom 150ms ease-out 800ms, right 150ms ease-out 800ms;
+}
+
+.search-box input[type="text"]:focus + button[type="reset"]:after, .search-box input[type="text"]:not(:placeholder-shown) + button[type="reset"]:after {
+  top: 0;
+  right: 0.62rem;
+  opacity: 1;
+  transition: top 150ms ease-out 950ms, right 150ms ease-out 950ms, opacity 150ms ease 950ms;
+}
+.search-box button[type="reset"] {
+  background-color: transparent;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -1.1rem;
+  right: -1.1rem;
+  transition: bottom 150ms ease-out 150ms, right 150ms ease-out 150ms;
+}
+.search-box button[type="reset"]:before, .search-box button[type="reset"]:after {
+  content: "";
+  height: 1.6rem;
+  border-left: solid 0.3rem magenta;
+  border-radius: 5rem;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.search-box button[type="reset"]:after {
+  transform: rotate(45deg);
+  border-radius: 5rem;
+  opacity: 0;
+  top: -0.3rem;
+  right: -0.15rem;
+  transition: top 150ms ease-out, right 150ms ease-out, opacity 150ms ease-out;
+}
+
+/*SEARCHER*/
+
+.icon {
+  float: left;
+  height: 3vh;
+  margin-top: 2.5vh;
+  margin-left: 31vw;
+  transition: 0.15s;
+}
+
+.icon:hover, .icon:active {
+  opacity: 0.75;
+  transition: 0.15s;
+}
+
+.login {
+  font-size: 1.2vh;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem magenta;
+  float: right;
+  margin-right: 5vw;
+  margin-top: 0.95vh;
+}
+
+/*HEADER*/
+
+
+/*CENTER*/
+
+.video {
+  margin-top: 0.8vh;
+  width: 100vw;
+  height: 60vw;
+  position: sticky;
+  top: 0.5rem;
+}
+
+.profile {
+  background: url(../img/patron2.png);
+  background-size: 5rem;
+  width: 100vw;
+  height: 7rem;
+  margin-top: 0.8vh;
+}
+
+.pfp {
+  width: 5rem;
+  height: 5rem;
+  float: left;
+  background: black;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.pfn {
+  float: left;
+  margin-top: 3.5rem;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 0.15rem 0.15rem magenta;
+  background: black;
+  border-radius: 2rem;
+  width: 13rem;
+  text-align: center;
+}
+
+.coment {
+  width: 92vw;
+  margin: 1rem;
+  background: white;
+}
+
+.compfp {
+  width: 2rem;
+  height: 2rem;
+  float: left;
+}
+
+.name {
+ font-size: 1.2rem;
+ padding-top: 0.5rem;
+ text-shadow: 0.1rem 0.1rem magenta;
+}
+
+.com {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*CENTER*/
+
+
+/*BOTTOM*/
+
+.botmenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 8vh;
+  background: url(../img/patron1.png) yellow;
+  background-size: 3rem;
+}
+
+/*BOTTOM*/

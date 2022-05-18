@@ -1,0 +1,290 @@
+body {
+  background: #303030;
+}
+
+.container {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 90.8vh;
+  overflow: scroll;
+}
+
+a,a:hover, a:active{
+	text-decoration: none;
+	color: white;
+}
+
+a:hover, a:active {
+  color: yellow;
+  transition: 0.15s;
+}
+
+.categories > a {
+  color: magenta;
+}
+
+/*HEADER*/
+
+.header{
+  width: 100vw;
+  height: 8vh;
+  background: #0A0A0A;
+  box-shadow: 0 0.05vh white;
+}
+
+/*SEARCHER*/
+
+.searcher {
+  position: absolute;
+  top: 1.6vh;
+  left: 2vw;
+}
+
+.search-box {
+  border: solid 0.3rem magenta;
+  display: inline-block;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.search-box input[type="text"] {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  background: transparent;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 1rem;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 2rem;
+  transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 150ms;
+}
+
+.search-box input[type="text"]:focus {
+  outline: none;
+}
+
+.search-box input[type="text"]:focus, .search-box input[type="text"]:not(:placeholder-shown) {
+  width: 24vw;;
+  transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.search-box input[type="text"]:focus + button[type="reset"], .search-box input[type="text"]:not(:placeholder-shown) + button[type="reset"] {
+  bottom: 0.2rem;
+  right: 0.5rem;
+  transition: bottom 150ms ease-out 800ms, right 150ms ease-out 800ms;
+}
+
+.search-box input[type="text"]:focus + button[type="reset"]:after, .search-box input[type="text"]:not(:placeholder-shown) + button[type="reset"]:after {
+  top: 0;
+  right: 0.62rem;
+  opacity: 1;
+  transition: top 150ms ease-out 950ms, right 150ms ease-out 950ms, opacity 150ms ease 950ms;
+}
+.search-box button[type="reset"] {
+  background-color: transparent;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -1.1rem;
+  right: -1.1rem;
+  transition: bottom 150ms ease-out 150ms, right 150ms ease-out 150ms;
+}
+.search-box button[type="reset"]:before, .search-box button[type="reset"]:after {
+  content: "";
+  height: 1.6rem;
+  border-left: solid 0.3rem magenta;
+  border-radius: 5rem;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.search-box button[type="reset"]:after {
+  transform: rotate(45deg);
+  border-radius: 5rem;
+  opacity: 0;
+  top: -0.3rem;
+  right: -0.15rem;
+  transition: top 150ms ease-out, right 150ms ease-out, opacity 150ms ease-out;
+}
+
+/*SEARCHER*/
+
+.icon {
+  float: left;
+  height: 3vh;
+  margin-top: 2.5vh;
+  margin-left: 31vw;
+  transition: 0.15s;
+}
+
+.icon:hover, .icon:active {
+  opacity: 0.75;
+  transition: 0.15s;
+}
+
+.login {
+  font-size: 1.2vh;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem magenta;
+  float: right;
+  margin-right: 5vw;
+  margin-top: 0.95vh;
+}
+
+/*HEADER*/
+
+
+/*CATEGORIES*/
+
+.categories {
+  position: sticky;
+  top:0.6vh;
+  height: 5vh;
+  width: 96vw;
+  background: white;
+  box-shadow: 1.5vw 0.8vh black,
+  1.7vw 0.8vh white,
+  1.7vw 0.9vh white,
+  1.7vw 0.7vh white,
+  1.3vw 1vh white;
+  margin-left: 1.4vw;
+  margin-top: 0.8vh;
+  color: magenta;
+  font-size: 1.2vh;
+  text-shadow: 0.105rem 0.105rem black;
+  text-align: center;
+  z-index: 5;
+}
+
+.music, .art, .design {
+  float: left;
+  width: 32vw;
+  height: 4vh;
+  padding-top: 1.3vh;
+  transition: 0.15s;
+}
+
+.music:hover, .art:hover, .design:hover, .music:active, .art:active, .design:active {
+  color: cyan;
+  transition: 0.15s;
+}
+
+/*CATEGORIES*/
+
+
+/*CENTER*/
+
+.publication {
+  width: 30.6vw;
+  float: left;
+  margin-left: 2vw;
+  margin-top: 3vw;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 1vw 1vw yellow;
+  position: relative;
+  transition: 0.15s;
+}
+
+.publication:hover, .publication:active {
+  opacity: 0.6;
+  transition: 0.15s;
+}
+
+#music::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2.32vw;
+  height: 6vw;
+  bottom: 0.5vw;
+  right: 1vw;
+  background: url(../img/sol.png);
+  background-size: cover;
+  z-index: 4;
+}
+
+.images {
+  width: 30.6vw;
+  height: 30.6vw;
+  background: url(../img/patron2.png) #fff;
+  background-size: 2rem;
+}
+
+.pubtit {
+  font-size: 0.9rem;
+  width: 30.6;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem magenta;
+  margin-left: 2vw;
+  margin-top: 0.5vw;
+  margin-bottom: 1vw;
+}
+
+/*CENTER*/
+
+
+/*BOTTOM*/
+
+.botmenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 8vh;
+  background: black;
+}
+
+.tl, .tutorial, .forum, .database {
+  position: absolute;
+  top: 1vh;
+  width: 23.8vw;
+  height: 6vh;
+  background: white;
+  float: left;
+  font-size: 1.2vh;
+  color: cyan;
+  text-shadow: 0.105rem 0.105rem black;
+}
+
+.tl {
+  clip-path: polygon(4% 0, 95% 4%, 98% 95%, 4% 97%);
+  left: 1vw;
+}
+
+.tutorial {
+  clip-path: polygon(2% 2%, 98% 1%, 98% 97%, 5% 95%);
+  left: 25vw;
+}
+
+.forum {
+  clip-path: polygon(6% 2%, 97% 3%, 98% 96%, 4% 98%);
+  left: 49.6vw;
+}
+
+.database {
+  clip-path: polygon(3% 4%, 96% 5%, 98% 98%, 4% 96%);
+  left: 74.4vw;
+}
+
+.tl:hover, .tutorial:hover, .forum:hover, .database:hover, .tl:active, .tutorial:active, .forum:active, .database:active{
+    color: magenta;
+    transition: 0.15s;
+}
+
+.botptions {
+  width: 23.8vw;
+  text-align: center;
+  margin-top: 1.4vh;
+}
+
+
+/*BOTTOM*/

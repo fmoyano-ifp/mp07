@@ -1,0 +1,156 @@
+body {
+  background: #303030;
+}
+
+.container {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 90.8vh;
+  overflow: scroll;
+}
+
+a,a:hover, a:active{
+	text-decoration: none;
+	color: cyan;
+}
+
+a:hover, a:active {
+  color: magenta;
+  transition: 0.15s;
+}
+
+.categories > a {
+  color: magenta;
+}
+
+/*HEADER*/
+
+.header{
+  width: 100vw;
+  height: 8vh;
+  background: #0A0A0A;
+  box-shadow: 0 0.05vh white;
+}
+
+.icon {
+  height: 5.5vh;
+  margin: 0 auto;
+  padding-top: 2.5vh;
+  transition: 0.15s;
+}
+
+.icon:hover, .icon:active {
+  opacity: 0.75;
+  transition: 0.15s;
+}
+
+/*HEADER*/
+
+
+/*CENTER*/
+
+.concred {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 7vh;
+}
+
+.inftit {
+  margin-top: 3vh;
+  color: cyan;
+  text-shadow: 0.1rem 0.1rem magenta;
+  font-size: 1.5rem;
+}
+
+#textput {
+  border: solid cyan;
+  width: 100%;
+  max-width: 30rem;
+  box-shadow: 0.4rem 0.4rem magenta;
+}
+
+#textput:focus {
+  border: solid cyan;
+  background: yellow;
+  outline: none;
+}
+
+.termscon {
+  float: left;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../img/x.png) yellow;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 4vh;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+}
+
+#termsbox {
+  display: none;
+  position: relative;
+}
+
+#labeldor {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: yellow;
+  position: absolute;
+  border-radius: 50%;
+}
+
+input[type=checkbox]:checked+label {
+  opacity: 0;
+}
+
+.terms {
+  color: white;
+  margin-left: 3.5rem;
+  margin-top: 4.1vh;
+}
+
+.register {
+  width: 8rem;
+  height: 2.5rem;
+  background: yellow;
+  margin-top: 5vh;
+  float: left;
+}
+
+.register:hover, .register:active {
+  background: magenta;
+}
+
+.regtext {
+  float: left;
+  margin-top: 0.1rem;
+  width: 8rem;
+  text-align: center;
+  color: magenta;
+}
+
+.regtext:hover, .regtext:active {
+  color: cyan;
+}
+
+/*CENTER*/
+
+
+/*BOTTOM*/
+
+.botmenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 8vh;
+  background: url(../img/patron1.png) yellow;
+  background-size: 3rem;
+}
+
+/*BOTTOM*/
